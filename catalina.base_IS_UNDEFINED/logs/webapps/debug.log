@@ -1,0 +1,31 @@
+2019-01-31 12:04:16.374 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.enable_status, p.create_time, p.last_edit_time, p.product_category_id, p.shop_id FROM tb_product p WHERE p.shop_id = ? ORDER BY s.priority DESC LIMIT ?,?; 
+2019-01-31 12:04:16.419 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 5(Integer)
+2019-01-31 12:04:57.708 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.enable_status, p.create_time, p.last_edit_time, p.product_category_id, p.shop_id FROM tb_product p WHERE p.shop_id = ? ORDER BY p.priority DESC LIMIT ?,?; 
+2019-01-31 12:04:57.751 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 5(Integer)
+2019-01-31 12:04:57.796 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - <==      Total: 5
+2019-01-31 12:05:26.023 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.enable_status, p.create_time, p.last_edit_time, p.product_category_id, p.shop_id FROM tb_product p WHERE p.shop_id = ? ORDER BY p.priority DESC LIMIT ?,?; 
+2019-01-31 12:05:26.066 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 11(Integer)
+2019-01-31 12:05:26.095 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - <==      Total: 10
+2019-01-31 12:22:42.201 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.enable_status, p.create_time, p.last_edit_time, p.product_category_id, p.shop_id FROM tb_product p WHERE p.shop_id = ? ORDER BY p.priority DESC LIMIT ?,?; 
+2019-01-31 12:22:42.244 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 10(Integer)
+2019-01-31 12:22:42.273 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - <==      Total: 10
+2019-01-31 12:22:42.281 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product p WHERE p.shop_id = ? 
+2019-01-31 12:22:42.282 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - ==> Parameters: 2(Long)
+2019-01-31 12:22:42.283 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2019-01-31 13:43:46.327 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.enable_status, p.create_time, p.last_edit_time, p.product_category_id, p.shop_id FROM tb_product p WHERE p.shop_id = ? ORDER BY p.priority DESC LIMIT ?,?; 
+2019-01-31 13:43:46.367 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 5(Integer), 5(Integer)
+2019-01-31 13:43:46.394 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - <==      Total: 5
+2019-01-31 13:43:46.402 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product p WHERE p.shop_id = ? 
+2019-01-31 13:43:46.402 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - ==> Parameters: 2(Long)
+2019-01-31 13:43:46.404 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2019-01-31 15:00:52.907 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.enable_status, p.create_time, p.last_edit_time, p.product_category_id, p.shop_id FROM tb_product p WHERE shop_id = ? ORDER BY p.priority DESC LIMIT ?,?; 
+2019-01-31 15:00:52.964 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 10(Integer)
+2019-01-31 15:00:52.993 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductList - <==      Total: 10
+2019-01-31 15:00:53.001 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2019-01-31 15:00:53.002 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - ==> Parameters: 2(Long)
+2019-01-31 15:00:53.003 [main] DEBUG cn.dengxin.myo2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2019-01-31 16:55:16.642 [main] DEBUG c.d.m.dao.ProductDao.updateProductCategoryToNull - ==>  Preparing: UPDATE tb_product SET product_category_id = null WHERE product_category_id = ? 
+2019-01-31 16:55:16.683 [main] DEBUG c.d.m.dao.ProductDao.updateProductCategoryToNull - ==> Parameters: 2(Long)
+2019-01-31 16:57:59.556 [main] DEBUG c.d.m.dao.ProductDao.updateProductCategoryToNull - ==>  Preparing: UPDATE tb_product SET product_category_id = null WHERE product_category_id = ? 
+2019-01-31 16:57:59.595 [main] DEBUG c.d.m.dao.ProductDao.updateProductCategoryToNull - ==> Parameters: 2(Long)
+2019-01-31 16:57:59.614 [main] DEBUG c.d.m.dao.ProductDao.updateProductCategoryToNull - <==    Updates: 1
