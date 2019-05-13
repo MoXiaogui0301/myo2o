@@ -9,4 +9,6 @@ import cn.dengxin.myo2o.entity.ShopCategory;
 public interface ShopCategoryDao {
 	List<ShopCategory> queryShopCategory(@Param("shopCategoryCondition")ShopCategory shopCategoryCondition);
 
+//	List<ShopCategory> queryShopCategory
+
 }

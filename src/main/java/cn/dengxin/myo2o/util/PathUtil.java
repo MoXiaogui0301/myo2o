@@ -14,7 +14,7 @@ public class PathUtil {
 		if (os.toLowerCase().startsWith("win")) {
 			basePath = "D:/projectdev/image/";
 		}else {
-			basePath = "/Users/dengxin/资料/myo2o/image/";
+			basePath = "/Users/dengxin/资料/技术资料/myo2o/image/";
 		}
 		//更换分隔符
 		basePath = basePath.replace("/", separator);

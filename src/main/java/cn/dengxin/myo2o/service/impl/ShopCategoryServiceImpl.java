@@ -1,5 +1,6 @@
 package cn.dengxin.myo2o.service.impl;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,4 +18,9 @@ public class ShopCategoryServiceImpl implements ShopCategoryService {
 	public List<ShopCategory> getShopCategoryList(ShopCategory shopCategoryCondition){
 		return shopCategoryDao.queryShopCategory(shopCategoryCondition);
 	}
+
+//	@Override
+//	public List<ShopCategory> getShopCategoryList(Long parentId) throws IOException {
+//		return shopCategoryDao.queryShopCategory(parentId);
+//	}
 }
